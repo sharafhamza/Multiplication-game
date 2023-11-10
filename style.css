@@ -50,18 +50,24 @@ input {
 }
 
 /* Styling for buttons */
-button {
-    padding: 12px 15px;
+.playeronebutton, .playertwobutton, .playerthreebutton, .playerfourbutton{
+    padding: 11px 15px;
     border: none;
     background: #118FE9;
+    border: 1px solid #118FE9;
     color: white;
     border-radius: 4px;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     cursor: pointer;
     margin-left: 8px;
-}
+    transition: .3s all linear;
 
+}
+.playeronebutton:hover, .playertwobutton:hover, .playerthreebutton:hover, .playerfourbutton:hover{
+    color: #118FE9;
+    background: white;
+}
 /* Player Two initially hidden */
 .playertwo {
     display: none;
@@ -132,10 +138,10 @@ button {
     font-family: Arial;
     padding: 4px 0;
     border-radius: 5px;
-    border: 1px solid #aa4141;
     padding: 10px 5px;
     transition: .6s;
     transform: translateY(54px);
+    border: 1px solid #DC2626
 }
 
 /* Styling for area error paragraphs */
@@ -181,11 +187,19 @@ button {
     background: transparent;
     color: #DC2626;
     border: 1px solid #DC2626;
-    transition: .6s;
+    transition: .6s all linear;
     padding: 10px 15px;
     transform: translateX(110px);
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 8px;
 }
-
+.areabutton:hover, .areabutton2:hover, .areabutton3:hover, .areabutton4:hover{
+    color: #7F1D1D;
+    background-color: rgba(248, 113, 113, 0.555);
+} 
 /* Styling for hidden elements */
 .hidden {
     visibility: hidden;

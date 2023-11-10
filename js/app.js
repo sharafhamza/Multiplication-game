@@ -110,7 +110,7 @@ playeronebutton.addEventListener("click", ()=>{
                     typecount++;
                     error.innerHTML += type.charAt(typecount);
                     error.classList.add("add")
-                    // console.log(typecount);
+                    
                     if(typecount > text.length){
                         clearInterval(stop)
                         typecount = -1;
@@ -127,7 +127,7 @@ playeronebutton.addEventListener("click", ()=>{
                         error.classList.add("add")
                         text.pop()        
                         error.innerHTML = text.join("");
-                        // console.log(text);
+                        
                         if(text.length == 0){
                             error.classList.remove("add")
                             clearInterval(clear);
@@ -155,7 +155,6 @@ playeronebutton.addEventListener("click", ()=>{
                 typecount++;
                 error.innerHTML += type.charAt(typecount);
                 error.classList.add("add")
-                // console.log(typecount);
                 if(typecount > text.length){
                     clearInterval(stop)
                     typecount = -1;
@@ -172,7 +171,6 @@ playeronebutton.addEventListener("click", ()=>{
                     error.classList.add("add")
                     text.pop()        
                     error.innerHTML = text.join("");
-                    // console.log(text);
                     if(text.length == 0){
                         error.classList.remove("add")
                         clearInterval(clear);
@@ -200,7 +198,6 @@ playeronebutton.addEventListener("click", ()=>{
             typecount++;
             error.innerHTML += type.charAt(typecount);
             error.classList.add("add")
-            console.log(typecount);
             if(typecount > text.length){
                 error.classList.remove("add")
                 clearInterval(stop)
@@ -228,7 +225,7 @@ playeronebutton.addEventListener("click", ()=>{
             }
             let clear = setInterval(() => {
                 textminus()
-            },250);
+            },400);
         })
     }
 })
@@ -295,7 +292,7 @@ playertwobutton.addEventListener("click", ()=>{
                     typecount++;
                     error2.innerHTML += type.charAt(typecount);
                     error2.classList.add("add")
-                    // console.log(typecount);
+                    
                     if(typecount > text.length){
                         clearInterval(stop)
                         typecount = -1;
@@ -312,7 +309,7 @@ playertwobutton.addEventListener("click", ()=>{
                         error2.classList.add("add")
                         text.pop()        
                         error2.innerHTML = text.join("");
-                        // console.log(text);
+                        
                         if(text.length == 0){
                             error2.classList.remove("add")
                             clearInterval(clear);
@@ -342,7 +339,7 @@ playertwobutton.addEventListener("click", ()=>{
                 typecount++;
                 error2.innerHTML += type.charAt(typecount);
                 error2.classList.add("add")
-                // console.log(typecount);
+                
                 if(typecount > text.length){
                     clearInterval(stop)
                     typecount = -1;
@@ -359,7 +356,7 @@ playertwobutton.addEventListener("click", ()=>{
                     error2.classList.add("add")
                     text.pop()        
                     error2.innerHTML = text.join("");
-                    // console.log(text);
+                    
                     if(text.length == 0){
                         error2.classList.remove("add")
                         clearInterval(clear);
@@ -387,7 +384,7 @@ playertwobutton.addEventListener("click", ()=>{
             typecount++;
             error2.innerHTML += type.charAt(typecount);
             error2.classList.add("add")
-            // console.log(typecount);
+            
             if(typecount > text.length){
                 error2.classList.remove("add")
                 clearInterval(stop)
@@ -405,7 +402,7 @@ playertwobutton.addEventListener("click", ()=>{
                 error2.classList.add("add")
                 text.pop()        
                 error2.innerHTML = text.join("");
-                // console.log(text);
+                
                 if(text.length == 0){
                     clearInterval(clear);
                     areabutton2.classList.add("hidden")
@@ -417,7 +414,7 @@ playertwobutton.addEventListener("click", ()=>{
             }
             let clear = setInterval(() => {
                 textminus()
-            },250);
+            },400);
         })
     }
 })
@@ -496,7 +493,7 @@ playerthreebutton.addEventListener("click", ()=>{
                         typecount++;
                         error3.innerHTML += type.charAt(typecount);
                         error3.classList.add("add")
-                        // console.log(typecount);
+                        
                         if(typecount > text.length){
                             clearInterval(stop)
                             typecount = -1;
@@ -513,7 +510,7 @@ playerthreebutton.addEventListener("click", ()=>{
                             error3.classList.add("add")
                             text.pop()        
                             error3.innerHTML = text.join("");
-                            // console.log(text);
+                            
                             if(text.length == 0){
                                 error3.classList.remove("add")
                                 clearInterval(clear);
@@ -543,7 +540,7 @@ playerthreebutton.addEventListener("click", ()=>{
                 typecount++;
                 error3.innerHTML += type.charAt(typecount);
                 error3.classList.add("add")
-                // console.log(typecount);
+                
                 if(typecount > text.length){
                     error3.classList.remove("add")
                     clearInterval(stop)
@@ -561,7 +558,7 @@ playerthreebutton.addEventListener("click", ()=>{
                     error3.classList.add("add")
                     text.pop()        
                     error3.innerHTML = text.join("");
-                    // console.log(text);
+                    
                     if(text.length == 0){
                         clearInterval(clear);
                         areabutton3.classList.add("hidden")
@@ -588,7 +585,7 @@ playerthreebutton.addEventListener("click", ()=>{
             typecount++;
             error3.innerHTML += type.charAt(typecount);
             error3.classList.add("add")
-            // console.log(typecount);
+            
             if(typecount > text.length){
                 error3.classList.remove("add")
                 clearInterval(stop)
@@ -606,7 +603,7 @@ playerthreebutton.addEventListener("click", ()=>{
                 error3.classList.add("add")
                 text.pop()        
                 error3.innerHTML = text.join("");
-                // console.log(text);
+                
                 if(text.length == 0){
                     clearInterval(clear);
                     areabutton3.classList.add("hidden")
@@ -618,7 +615,7 @@ playerthreebutton.addEventListener("click", ()=>{
             }
             let clear = setInterval(() => {
                 textminus()
-            },250);
+            },400);
         })
     }
 })
@@ -713,7 +710,7 @@ playerfourbutton.addEventListener("click", ()=>{
                     typecount++;
                     error4.innerHTML += type.charAt(typecount);
                     error4.classList.add("add")
-                    // console.log(typecount);
+                    
                     if(typecount > text.length){
                         clearInterval(stop)
                         typecount = -1;
@@ -730,7 +727,7 @@ playerfourbutton.addEventListener("click", ()=>{
                         error4.classList.add("add")
                         text.pop()        
                         error4.innerHTML = text.join("");
-                        // console.log(text);
+                        
                         if(text.length == 0){
                             error4.classList.remove("add")
                             clearInterval(clear);
@@ -760,7 +757,7 @@ playerfourbutton.addEventListener("click", ()=>{
                 typecount++;
                 error4.innerHTML += type.charAt(typecount);
                 error4.classList.add("add")
-                // console.log(typecount);
+                
                 if(typecount > text.length){
                     error4.classList.remove("add")
                     clearInterval(stop)
@@ -778,7 +775,7 @@ playerfourbutton.addEventListener("click", ()=>{
                     error4.classList.add("add")
                     text.pop()        
                     error4.innerHTML = text.join("");
-                    // console.log(text);
+                    
                     if(text.length == 0){
                         clearInterval(clear);
                         areabutton4.classList.add("hidden")
@@ -805,7 +802,7 @@ playerfourbutton.addEventListener("click", ()=>{
             typecount++;
             error4.innerHTML += type.charAt(typecount);
             error4.classList.add("add")
-            // console.log(typecount);
+            
             if(typecount > text.length){
                 error4.classList.remove("add")
                 clearInterval(stop)
@@ -823,7 +820,7 @@ playerfourbutton.addEventListener("click", ()=>{
                 error4.classList.add("add")
                 text.pop()        
                 error4.innerHTML = text.join("");
-                // console.log(text);
+                
                 if(text.length == 0){
                     clearInterval(clear);
                     areabutton4.classList.add("hidden")
@@ -835,7 +832,7 @@ playerfourbutton.addEventListener("click", ()=>{
             }
             let clear = setInterval(() => {
                 textminus()
-            },250);
+            },400);
         })
     }
 })
