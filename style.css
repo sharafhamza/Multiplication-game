@@ -1,0 +1,195 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: linear-gradient(to right, #657ced, #7753acc5);
+   
+}
+.box, .box2, .box3 {
+    width: 450px;
+    margin: auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    padding-bottom: 10px;
+    background: #fff;
+    box-shadow: -16px -18px #001;
+    margin-top: 53px;
+    transition: .6s;
+    overflow: hidden;
+}
+h1{
+    font-family: system-ui, -apple-system;
+    font-size: 28px;
+    margin: 20px 0;
+}
+h2{
+    font-family: sans-serif;
+    margin-bottom: 20px;
+
+}
+.playertwo h2{
+    margin-top: 20px;
+}
+input {
+    padding: 13px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+button {
+    padding: 12px 15px;
+    border: none;
+    background: #118FE9;
+    color: white;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 8px;
+}
+
+
+.playertwo{
+    display: none;
+}
+.success, .success3, .success4{
+    background-color: #4ade8070;
+    width: 300px;
+    margin: auto;
+    font-size: 18px;
+    color: #2b583d;
+    font-family: Arial;
+    padding: 4px 0;
+    margin-top: 15px;
+    border-radius: 5px;
+    display: none;
+    line-height: 30px;
+    border: 1px solid #2b583d;
+    padding: 10px 5px;
+    
+}
+.chance, .chance4, .chance3{
+    font-size: 16px;
+    font-family: sans-serif;
+    margin: 20px;
+}
+.box2{
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-288px);
+}
+.box3{
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s all linear;
+}
+.gif, .gif2, .gif4{
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 65px;
+}
+.area, .area2, .area3, .area4{
+    display: flex;
+    align-items: center;
+    width: 350px;
+    margin: auto;
+    margin-top: 15px;
+}
+.areaerror, .areaerror2, .areaerror3, .areaerror4{
+    width: 70%;
+    position: relative;
+    background-color: rgba(248, 113, 113, 0.555);
+    margin: auto;
+    font-size: 18px;
+    color: #7F1D1D;
+    font-family: Arial;
+    padding: 4px 0;
+    border-radius: 5px;
+    border: 1px solid #aa4141;
+    padding: 10px 5px;
+    transition: .6s;
+    transform: translateY(54px);
+}
+
+.areaerror p, .areaerror2 p, .areaerror3 p, .areaerror4 p{
+    display: inline;
+    padding: 10px 18px;
+    position: relative;
+    background: transparent;
+    border: 0;
+}
+.playeronewrapper, .playertwowrapper, .playerthreewrapper, .playerfourwrapper{
+    transform: translateY(22px);
+    transition: 1s all ;
+
+}
+.add::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    right: 11px;
+    width: 2px;
+    height: 25px;
+    background-color: #aa4141;
+    animation: blink .8s infinite; 
+}
+
+@keyframes blink{
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+} 
+
+.areabutton, .areabutton2, .areabutton3, .areabutton4{
+    width: 30%;
+    background: transparent;
+    color: #DC2626;
+    border: 1px solid #DC2626;
+    transition: .6s;
+    padding: 10px 15px;
+    transform: translateX(110px);
+}
+.hidden{
+    visibility: hidden;
+    opacity: 0;
+}
+.visible{
+    visibility: visible;
+    opacity: 1;
+}
+.inputarea{
+    display: flex;
+    align-items: center;
+    width: 350px;
+    margin: auto;
+}
+.inputarea input{
+    width: 65%;
+}
+.inputarea button{
+    width: 35%;
+}
+.notice, .notice2, .notice3, .notice4{
+    font-family: sans-serif;
+    font-size: 18px;
+    width: auto;
+    margin: auto;
+    line-height: 32px;
+    border: 2px double #eb4d4b;
+    padding: 0 40px;
+    height: 113px;
+    display: flex;
+    align-items: center;
+    margin-top: -23px;
+    background: #6c5ce7;
+    color: white;
+}
+.notice p, .notice2 p, .notice3 p{
+    display: inline;
+}
+.move{
+    transform: translate(0, 0);
+}
