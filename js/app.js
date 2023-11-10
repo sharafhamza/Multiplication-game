@@ -213,6 +213,7 @@ playeronebutton.addEventListener("click", ()=>{
             function textminus(){
                 error.classList.add("add")
                 text.pop()        
+                text.join()        
                 error.innerHTML = text.join("");
                 if(text.length == 0){
                     clearInterval(clear);
@@ -820,7 +821,6 @@ playerfourbutton.addEventListener("click", ()=>{
                 error4.classList.add("add")
                 text.pop()        
                 error4.innerHTML = text.join("");
-                
                 if(text.length == 0){
                     clearInterval(clear);
                     areabutton4.classList.add("hidden")
