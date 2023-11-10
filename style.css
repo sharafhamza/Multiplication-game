@@ -1,11 +1,15 @@
-*{
+/* Resetting */
+* {
     padding: 0;
     margin: 0;
 }
-body{
+
+/* Body styling */
+body {
     background-image: linear-gradient(to right, #657ced, #7753acc5);
-   
 }
+
+/* Styling for boxes */
 .box, .box2, .box3 {
     width: 450px;
     margin: auto;
@@ -19,24 +23,33 @@ body{
     transition: .6s;
     overflow: hidden;
 }
-h1{
+
+/* Heading 1 styling */
+h1 {
     font-family: system-ui, -apple-system;
     font-size: 28px;
     margin: 20px 0;
 }
-h2{
+
+/* Heading 2 styling */
+h2 {
     font-family: sans-serif;
     margin-bottom: 20px;
-
 }
-.playertwo h2{
+
+/* Additional styling for Player Two heading */
+.playertwo h2 {
     margin-top: 20px;
 }
+
+/* Styling for input elements */
 input {
     padding: 13px 15px;
     border: 1px solid #ddd;
     border-radius: 6px;
 }
+
+/* Styling for buttons */
 button {
     padding: 12px 15px;
     border: none;
@@ -49,11 +62,13 @@ button {
     margin-left: 8px;
 }
 
-
-.playertwo{
+/* Player Two initially hidden */
+.playertwo {
     display: none;
 }
-.success, .success3, .success4{
+
+/* Styling for success messages */
+.success, .success3, .success4 {
     background-color: #4ade8070;
     width: 300px;
     margin: auto;
@@ -67,36 +82,47 @@ button {
     line-height: 30px;
     border: 1px solid #2b583d;
     padding: 10px 5px;
-    
 }
-.chance, .chance4, .chance3{
+
+/* Styling for chance messages */
+.chance, .chance4, .chance3 {
     font-size: 16px;
     font-family: sans-serif;
     margin: 20px;
 }
-.box2{
+
+/* Styling for Box Two animation */
+.box2 {
     opacity: 0;
     visibility: hidden;
     transform: translateY(-288px);
 }
-.box3{
+
+/* Styling for Box Three animation */
+.box3 {
     visibility: hidden;
     opacity: 0;
     transition: .5s all linear;
 }
-.gif, .gif2, .gif4{
+
+/* Styling for GIF images */
+.gif, .gif2, .gif4 {
     width: 200px;
     margin-top: 10px;
     margin-left: 65px;
 }
-.area, .area2, .area3, .area4{
+
+/* Styling for areas */
+.area, .area2, .area3, .area4 {
     display: flex;
     align-items: center;
     width: 350px;
     margin: auto;
     margin-top: 15px;
 }
-.areaerror, .areaerror2, .areaerror3, .areaerror4{
+
+/* Styling for area errors */
+.areaerror, .areaerror2, .areaerror3, .areaerror4 {
     width: 70%;
     position: relative;
     background-color: rgba(248, 113, 113, 0.555);
@@ -112,18 +138,22 @@ button {
     transform: translateY(54px);
 }
 
-.areaerror p, .areaerror2 p, .areaerror3 p, .areaerror4 p{
+/* Styling for area error paragraphs */
+.areaerror p, .areaerror2 p, .areaerror3 p, .areaerror4 p {
     display: inline;
     padding: 10px 18px;
     position: relative;
     background: transparent;
     border: 0;
 }
-.playeronewrapper, .playertwowrapper, .playerthreewrapper, .playerfourwrapper{
-    transform: translateY(22px);
-    transition: 1s all ;
 
+/* Wrapper animation for players */
+.playeronewrapper, .playertwowrapper, .playerthreewrapper, .playerfourwrapper {
+    transform: translateY(22px);
+    transition: 1s all;
 }
+
+/* Blinking animation for additional content */
 .add::after {
     content: "";
     position: absolute;
@@ -132,18 +162,21 @@ button {
     width: 2px;
     height: 25px;
     background-color: #aa4141;
-    animation: blink .8s infinite; 
+    animation: blink .8s infinite;
 }
 
-@keyframes blink{
-    from{
+/* Keyframe animation for blinking */
+@keyframes blink {
+    from {
         opacity: 0;
-    }to{
+    }
+    to {
         opacity: 1;
     }
-} 
+}
 
-.areabutton, .areabutton2, .areabutton3, .areabutton4{
+/* Styling for area buttons */
+.areabutton, .areabutton2, .areabutton3, .areabutton4 {
     width: 30%;
     background: transparent;
     color: #DC2626;
@@ -152,27 +185,39 @@ button {
     padding: 10px 15px;
     transform: translateX(110px);
 }
-.hidden{
+
+/* Styling for hidden elements */
+.hidden {
     visibility: hidden;
     opacity: 0;
 }
-.visible{
+
+/* Styling for visible elements */
+.visible {
     visibility: visible;
     opacity: 1;
 }
-.inputarea{
+
+/* Styling for input area */
+.inputarea {
     display: flex;
     align-items: center;
     width: 350px;
     margin: auto;
 }
-.inputarea input{
+
+/* Styling for input within the input area */
+.inputarea input {
     width: 65%;
 }
-.inputarea button{
+
+/* Styling for button within the input area */
+.inputarea button {
     width: 35%;
 }
-.notice, .notice2, .notice3, .notice4{
+
+/* Styling for notice messages */
+.notice, .notice2, .notice3, .notice4 {
     font-family: sans-serif;
     font-size: 18px;
     width: auto;
@@ -187,9 +232,13 @@ button {
     background: #6c5ce7;
     color: white;
 }
-.notice p, .notice2 p, .notice3 p{
+
+/* Styling for notice paragraphs */
+.notice p, .notice2 p, .notice3 p {
     display: inline;
 }
-.move{
+
+/* Additional move transformation */
+.move {
     transform: translate(0, 0);
 }

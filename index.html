@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Metadata for character set and viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- Title of the webpage -->
+    <title>Game</title>
+    <!-- Font and confetti script references -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <!-- Favicon link -->
+    <link rel="icon" type="image/x-icon" href="img/fav.png">
+    <!-- Stylesheet link -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
     <div class="main">
-        <div class="box">
+        <!-- box 1 and player 1 & player 2 part start -->
+            <div class="box">
             <div class="playerone">
                 <div class="playeronewrapper">
                     <h1 class="heading">Multiplication guess game</h1>
@@ -35,7 +42,7 @@
                     <div class="notice">
                         <p class="noticep">The number Player 1 has given is _ x 9 = ? You have to guess what number is this</p>
                     </div>
-                    <img class="gif" src="tenor.gif" alt="">
+                    <img class="gif" src="img/tenor.gif" alt="">
                     <h2 class="playertwoheading">Player 2</h2>
                     <p class="chance"></p>
                     <div class="inputarea">
@@ -51,15 +58,16 @@
                     <button class="areabutton2 hidden">Remove</button>
                 </div>
             </div>     
-        </div> 
-    
+            </div> 
+        <!-- box 1 and player 1 & player 2 part end -->
+        <!-- box 2 and player 3 part start -->
             <div class="box2">
             <div class="playerthree">
                 <div class="playerthreewrapper">
                     <div class="notice2">
                         <p class="noticep">The number Player 1 has given is _ x 9 = ? You have to guess what number is this</p>
                     </div>
-                    <img class="gif2" src="tenor.gif" alt="">
+                    <img class="gif2" src="img/tenor.gif" alt="">
                     <h2 class="playerthreeheading">Player 3</h2>
                     <p class="chance3"></p>
                     <div class="inputarea">
@@ -75,14 +83,16 @@
                     <button class="areabutton3 hidden">Remove</button>
                 </div>
             </div>
-        </div>
-        <div class="box3">
+            </div>
+        <!-- box 2 and player 3 part end -->
+        <!-- box 3 and player 4 part start -->
+            <div class="box3">
                 <div class="playerfour">
                     <div class="playerfourwrapper">
                         <div class="notice3">
                             <p class="noticep">The number Player 1 has given is _ x 9 = ? You have to guess what number is this</p>
                         </div>
-                        <img class="gif4" src="tenor.gif" alt="">
+                        <img class="gif4" src="img/tenor.gif" alt="">
                         <h2 class="playerfourheading">Player 4</h2>
                         <p class="chance4"></p>
                         <div class="inputarea">
@@ -99,13 +109,12 @@
                     </div>
                 </div>
             </div>
-        </div>
-       
+        <!-- box 3 and player 4 part end -->
     </div>
 
-    <div class="hello"></div>
 
-    <script src="app.js"></script>
-    <script src="confetti.js"></script>
+    <!-- JavaScript files for application logic and confetti effect -->
+    <script src="js/app.js"></script>
+    <script src="js/confetti.js"></script>
 </body>
 </html>

@@ -85,7 +85,7 @@ let box3 = document.querySelector(".box3");
 let finalvalue;
 let playerfourvalue;
 
-
+// Player one satrt
 playeronebutton.addEventListener("click", ()=>{
     if(playeroneinput.value){
         if(playeroneinput.value -11){
@@ -232,6 +232,8 @@ playeronebutton.addEventListener("click", ()=>{
         })
     }
 })
+// Player one end
+// Player two start
 playertwobutton.addEventListener("click", ()=>{
     if (playertwoinput.value) {
         if (playertwoinput.value - 11){
@@ -419,6 +421,8 @@ playertwobutton.addEventListener("click", ()=>{
         })
     }
 })
+// Player two end
+// Player three start
 playerthreebutton.addEventListener("click", ()=>{
     if (playerthreeinput.value) {
         if (playerthreeinput.value - 11){
@@ -618,6 +622,8 @@ playerthreebutton.addEventListener("click", ()=>{
         })
     }
 })
+// Player three end
+// Player four start
 playerfourbutton.addEventListener("click", ()=>{
     if (playerfourinput.value) {
         if (playerfourinput.value - 11){
@@ -833,5 +839,5 @@ playerfourbutton.addEventListener("click", ()=>{
         })
     }
 })
-
+// Player four end
 
